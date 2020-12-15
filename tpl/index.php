@@ -52,9 +52,9 @@
             </table>
             <div class='pageing'>
                 <p>
-                    <span><?php echo prev_page($_GET['page'],BASE_URL."/14/index");?></span>
-                    <?php page_num(BASE_URL."/14/index",$max_page,$_GET['page']);?>
-                    <span><?php echo next_page($_GET['page'],$max_page,BASE_URL."/14/index");?></span>
+                    <span><?php echo prev_page($_GET['page'],BASE_URL."14/index");?></span>
+                    <?php page_num(BASE_URL."14/index",$max_page,$_GET['page']);?>
+                    <span><?php echo next_page($_GET['page'],$max_page,BASE_URL."14/index");?></span>
                 </p>
             </div>
     </main>
