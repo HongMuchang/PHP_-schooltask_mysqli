@@ -25,7 +25,12 @@ if (!empty($_POST)) {
     while($list=mysqli_fetch_assoc($result)){//ある分だけループで取得
         @$lake_mail[]=$list;
     }
-    
+    if(@$lake_login_id[0]['login_id']==$_POST['login_id']){
+        $error['login_id'] = "dose";
+    }
+    if(@$lake_login_id[0]['mail'] == $_POST['mail']){
+        $error['mail'] = "dose";
+    }
     if (@$_POST['username'] == '') {
         $error['username'] = "blank";
     } 
@@ -39,12 +44,7 @@ if (!empty($_POST)) {
         $error['mail'] = "match";
     }
     
-    if(@$lake_login_id[0]['login_id']==$_POST['login_id']){
-        $error['login_id'] = "dose";
-    }
-    if(@$lake_login_id[0]['mail'] == $_POST['mail']){
-        $error['mail'] = "dose";
-    }
+   
     
     //送られた値を格納
     $_SESSION['join']=[$_POST['username'],$_POST['login_id'],$_POST['mail']];
