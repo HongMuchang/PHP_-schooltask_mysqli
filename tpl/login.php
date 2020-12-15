@@ -35,7 +35,7 @@
                     <!-- パスワード  -->
                     <div class="form-group">
                         <label for="pass">パスワード</label>
-                        <input type="pass" class="form-control" name="pass" placeholder="test" />
+                        <input type="password" class="form-control" name="pass" placeholder="test" />
                     </div>
 
                     <button class="btn btn-info" name="yes" value='btn'>ログイン</button>

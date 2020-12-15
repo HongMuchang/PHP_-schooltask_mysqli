@@ -45,7 +45,7 @@
                     <?php endif; ?>
                     <div class="form-group form-list">
                         <label class="form-title" for="pass">パスワード</label>
-                        <input type="pass" class="form-control" name="pass" placeholder="例）TAROU3939" />
+                        <input type="password" class="form-control" name="pass" placeholder="例）TAROU3939" />
                     </div>
 
                     <!-- メール  -->

@@ -22,11 +22,12 @@
                         </tr>
                         <tr>
                             <th class='login-tr' >ログインID:</th>
+
                             <td class='login-td'><?php echo $_SESSION['login']['login_id']?></td>
                         </tr>
                         <tr>
                             <th class='login-tr' >パスワード:</th>
-                            <td class='login-td'><?php echo $_SESSION['login']['pass']?></td>
+                            <td class='login-td'><?php echo str_repeat('*', strlen($_SESSION['login']['pass']))?></td>
                         </tr>
                         <tr>
                             <th class='login-tr' >メールアドレス:</th>
