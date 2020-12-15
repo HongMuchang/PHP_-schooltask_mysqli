@@ -15,7 +15,7 @@
             <div class="login-form-top">仮登録完了</div>
             <div class="login-form-main">
                 <div class='login-table-center'>
-                    <h3>本登録のリンクは<a href='<?php echo BASE_URL;?>/14/main_regis.php?id=<?php echo $hash;?>'>こちら</a>まで</h3>
+                    <h3>本登録のリンクは<a href='<?php echo BASE_URL;?>14/main_regis.php?id=<?php echo $hash;?>'>こちら</a>まで。</h3>
                     <hr class='white'>
                 </div>
             </div>
